@@ -1,0 +1,128 @@
+<!--This code is a highly edited version of the template found here. Putting the link to make sure we give proper attribution: https://github.com/Ehesp/Chrome-Extension-Twitter-Bootstrap-3-Template -->
+
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+    <meta name="description" content="A basic template for a Chrome Extension using Twitter Bootstrap 3">
+    
+    <title>CookiEditor Extension</title>
+    
+    <!-- Scripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/team19.js"></script>
+    
+    <!-- Cascading Style Sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">    
+  </head>
+  
+  <body>
+  
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand">CookiEditor</a>
+      </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Cookies</a></li>
+          <li><a data-toggle="tab" href="#menu1">Tutorial</a></li>
+        </ul>
+    </nav>
+  
+    <section class="tab-content">
+      <button style="display: none;" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal 
+      </button>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+            </div>
+            <div class="modal-body">
+              You have decided to delete a cookie on this page. Be aware that some cookies are important and make sure to avoid deleting those.
+            </div>
+            <div class="modal-footer">
+              <button id="yes" type="button" class="btn btn-default" data-dismiss="modal">Continue to Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModalHttpOnly" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+            </div>
+            <div class="modal-body">
+              You have decided to delete a HttpOnly cookie. Deleting such cookies is not possible and thus this cookie will not be deleted. You can read more about this type of cookie at <a href="https://www.owasp.org/index.php/HttpOnly" target="_blank">https://www.owasp.org/index.php/HttpOnly</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="home" class="tab-pane fade in active">
+            <div >
+              <table class="table table-hover" id="firstPartyCookieTable">
+                <thead>
+                <h2 class="firstPartyCookies">First Party Cookies</h2>
+                </thead>
+                <tbody>
+                  
+
+                </tbody>
+              </table>
+              </div>
+              <div >
+              <table class="table table-hover" id="thirdPartyCookieTable">
+                <thead>
+                  <h2 class="thirdPartyCookies">Third Party Cookies</h2>
+                  
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+              </div>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h1>Tutorial of Cookies</h1>
+            <h3>What's first party cookies?</h3>
+            <p>
+              First party cookies are cookies that are set by the website a user visited directly. To be specific, 
+              the host name of a first party cookie is the same as the domain in the browser address bar when it is set or retrieved. If you delete the first party cookie, it can be inconvenient for both website visitors and operators because it allows the collection of usage statistics that assist in improving the online experience for visitors.
+            </p>
+            <h4>Primary Usage</h4>
+            <ol>
+              <li>Automatically login.</li>
+              <li>Keep track of items in online shopping carts.</li> 
+              <li>Determine whether the computer has visited the website before.</li>  
+              <li>Reduce the amount of time to enter and process the same information each time a website is visited.</li>   
+            </ol>
+
+            <hr>
+
+            <h3>What's third party cookies?</h3>
+            <p>
+              Third party cookies are a cookies set up on the visitor hard drive by a domain or website distinct from the visited one. Third party cookies are implemented by marketing vendors and partners of the visited website by the way of third party tags.
+
+              For example, if you visit a site that has a YouTube video in one of its pages. This has been included by the website owner, using a piece of code provided by YouTube. YouTube will then be able to set cookies through this code, and know that you have watched that video, or even just visited the page the video is in.
+
+            </p>
+            <h4>Primary Usage</h4>
+            <ol>
+              <li>Online advertising.</li>
+              <li>Enable content to be shared via social networks.</li> 
+              <li>Store surfing and personalization preferences.</li> 
+              <li>Keep track of browsing history.</li> 
+            </ol>
+          </div> 
+    </section>
+    
+  </body>
+</html>
+
+Contact GitHub API Training Shop Blog About
